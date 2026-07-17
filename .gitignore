@@ -1,0 +1,35 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ArtCraft desktop state and private job data
+.cookies
+cookies.json
+ArtCraft/
+artcraft_debug.log
+tasks_v7.sqlite
+tasks_v7.sqlite-*
+.poll_state.json
+prepared/
+
+# Hermes-local state
+.hermes/
+
+# Editors and macOS
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,8 @@
+mcp_servers:
+  artcraft:
+    command: /ABSOLUTE/PATH/TO/artcraft-mcp/.venv/bin/python
+    args:
+      - /ABSOLUTE/PATH/TO/artcraft-mcp/server.py
+    connect_timeout: 30
+    enabled: true
+    timeout: 300

@@ -1,0 +1,21 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  unittest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m venv .venv
+      - run: .venv/bin/python -m pip install --upgrade pip
+      - run: .venv/bin/python -m pip install -r requirements.txt
+      - run: .venv/bin/python -m unittest -v
